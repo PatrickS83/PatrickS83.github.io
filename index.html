@@ -3,51 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="./static/css/normalize.css">
     <link rel="stylesheet" href="./static/css/style.css">
     <title>Patrick Schülke</title>
-
 </head>
 <body>
-        <script>
-        window.onload = function () {
-                document.getElementById('navbox__burgercontainer').addEventListener('click', function () {
-                 this.classList.toggle('open');
-                 document.getElementById('navi').classList.toggle('open');
-                })
-               };
-
-
-
-        </script>
-    <div class="herosite">
-        <nav class="navbox">
+<script>
+    window.onload = function () {
+    document.getElementById('navbox__burgercontainer').addEventListener('click', function () {
+    this.classList.toggle('open');
+    document.getElementById('navi').classList.toggle('open');
+    document.getElementById('navboxtest').classList.toggle('open');
+    })
+};
+</script>
+    <section class="herosite">
+        <nav id="navboxtest" class="navbox open">
             <div class="navbox__logo">LOGO</div>
             <ul id="navi" class="navbox__navbar">
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <div id="navbox__burgercontainer" class="open">
-                <div class="navbox__burgeritem">
-                    <span> </span>
-                    <span> </span>
-                    <span> </span>
-                    <span> </span>
+                <div id="navbox__burgercontainer" class="open">
+                    <div class="navbox__burgeritem">
+                        <span> </span>
+                        <span> </span>
+                        <span> </span>
+                        <span> </span>
+                    </div>
                 </div>
-            </div>
         </nav>
-        <section class="herobox">
+
+        <div class="herobox">
             <h1 class="herobox__name">Patrick Schülke</h1>
             <div class="herobox__subtitle">
                 <span class="herobox__subtitle__left">Psychologe</span>
                 <span class="herobox__subtitle__middle">&</span>
                 <span class="herobox__subtitle__right">Developer</span>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2 class="section-title">Projects</h2>
+    </section>
+
+    <section class="aboutme">
+        <h2 class="section-title">About me</h2>
+    </section>
+
+    <section class="experience">
+        <h2 class="section-title">My Tools and Skills</h2>
+    </section>
+
+    <footer>
+        <p>Patrick Schülke</p>
+    </footer>
 
 </body>
 </html>
