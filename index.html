@@ -4,63 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link rel="stylesheet" href="./static/css/normalize.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="./static/css/style.css">
     <title>Patrick Schülke</title>
 </head>
 <body>
-<script>
-    window.onload = function () {
-    document.getElementById('navbox__burgercontainer').addEventListener('click', function () {
-    this.classList.toggle('open');
-    document.getElementById('navi').classList.toggle('open');
-    document.getElementById('navboxtest').classList.toggle('open');
-    })
-};
-</script>
-    <section class="herosite">
-        <nav id="navboxtest" class="navbox open">
-            <div class="navbox__logo">LOGO</div>
-            <ul id="navi" class="navbox__navbar">
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+    <section id="particles-js" class="herosite">
+        <nav class="navbox open">
+            <div class="navbox__logo"><a href=""></a></div>
+            <ul class="navbox__navbar">
+                <li><a class="sitelink" href="#projectsection">Projekte</a></li>
+                <li><a class="sitelink" href="#aboutmesection">Über mich</a></li>
+                <li><a class="sitelink" href="#contactsection">Kontakt</a></li>
             </ul>
-                <div id="navbox__burgercontainer" class="open">
-                    <div class="navbox__burgeritem">
-                        <span> </span>
-                        <span> </span>
-                        <span> </span>
-                        <span> </span>
-                    </div>
+            <!-- Elements for CSS-styled-Burger-Nav-'Icon' -->
+            <div id="navbox__burgercontainer" class="open">
+                <div class="navbox__burgeritem">
+                    <span> </span>
+                    <span> </span>
+                    <span> </span>
+                    <span> </span>
                 </div>
+            </div>
         </nav>
-
-        <div class="herobox">
+        <!-- Welcome Text on landing page -->
+        <div class="herobox count-particles">
+            <div class="herobox__logo"><span></span></div>
             <h1 class="herobox__name">Patrick Schülke</h1>
             <div class="herobox__subtitle">
                 <span class="herobox__subtitle__left">Psychologe</span>
                 <span class="herobox__subtitle__middle">&</span>
                 <span class="herobox__subtitle__right">Developer</span>
             </div>
+            <a class="downarrow" href="#"></a>
+        </div>
+    </section> <!--/herosite-->
+
+    <section id="projectsection" class="projects">
+        <h2 class="section-title section-title--underscore">Projekte</h2>
+        <div class="slider carousel" data-flickity='{ "freeScroll": true }'>
+            <a href="#" class="slidecard slidecard--first">
+                <h3><span>Erstes</span> <span>Projekt</span></h3>
+                <img src="static/img/project_placeholder.png" alt="project img" class="slideimg">
+            </a>
+            <a href="#" class="slidecard slidecard--second">
+                <h3><span>Zweites</span> <span>Projekt</span></h3>
+                <img src="static/img/tablet_placeholder.png" alt="project img" class="slideimg">
+            </a>
+            <a href="#" class="slidecard slidecard--third">
+                <h3><span>Drittes</span> <span>Projekt</span></h3>
+                <img src="static/img/laptop_empty.png" alt="project img" class="slideimg">
+            </a>
+            <a href="#" class="slidecard slidecard--fourth">
+                <h3><span>Viertes</span> <span>Projekt</span></h3>
+                <img src="static/img/tablet_placeholder.png" alt="project img" class="slideimg">
+            </a>
         </div>
     </section>
 
-    <section class="projects">
-        <h2 class="section-title">Projects</h2>
+    <section id="aboutmesection" class="aboutme">
+        <div class="content aboutme__content">
+            <h2 class="section-title"><span>Wer&nbsp;</span>bin ich?</h2>
+            <p class="fadeInUp">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime sequi blanditiis, a natus hic assumenda sunt deleniti quibusdam rem
+                quam consequatur? Vero laborum officiis quae minima optio ea sint consequuntur cum nihil nam, veritatis neque corrupti nesciunt.
+                Mollitia error, quos molestias ipsam dolorem fugit? </p>
+            <a class="sitelink fadeInUp" href="#">Mehr</a>
+        </div>
+        <img src="static/img/kitten_placeholder.jpg" alt="kitten placeholder">
     </section>
 
-    <section class="aboutme">
-        <h2 class="section-title">About me</h2>
+    <section  class="experience">
+        <img src="static/img/kitten_placeholder_2.jpg" alt="kitten placeholder">
+            <div class="content experience__content">
+                <h2 class="section-title"><span>Was&nbsp;</span>kann ich?</h2>
+                <p class="fadeInUp">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime sequi blanditiis, a natus hic assumenda sunt deleniti quibusdam rem
+                    quam consequatur? Vero laborum officiis quae minima optio ea sint consequuntur cum nihil nam, veritatis neque corrupti nesciunt.
+                    Mollitia error, quos molestias ipsam dolorem fugit? </p>
+                <a class="sitelink fadeInUp" href="#">Mehr</a>
+            </div>
     </section>
 
-    <section class="experience">
-        <h2 class="section-title">My Tools and Skills</h2>
+    <section  class="tools">
+            <h2 class="section-title section-title--underscore">Mein Werkzeug</h2>
+            <div class="tools__overview">
+                <i class="fadeInUp devicon-html5-plain-wordmark"></i>
+                <i class="fadeInUp devicon-css3-plain-wordmark"></i>
+                <i class="fadeInUp devicon-sass-original"></i>
+                <i class="fadeInUp devicon-javascript-plain"></i>
+                <i class="fadeInUp devicon-jquery-plain-wordmark"></i>
+                <i class="fadeInUp devicon-nodejs-plain-wordmark"></i>
+                <i class="fadeInUp devicon-react-original-wordmark"></i>
+                <i class="fadeInUp devicon-github-plain-wordmark"></i>
+                <i class="fadeInUp devicon-wordpress-plain-wordmark"></i>
+
+            </div>
+    </section>
+
+    <section id="contactsection" class="contact">
+        <div class="contact__content slideIn">
+            <h2 class="section-title section-title--underscore">Sag hallo!</h2>
+            <a href="#">patrick@patrickschuelke.me</a>
+            <div class="social">
+                <a href="#"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>Patrick Schülke</p>
+        <div class="footercontent">
+            <a href="#">patrick@patrickschuelke.me</a>
+            <a href="#">+49 5345234234</a>
+            <a href="#">Impressum</a>
+        </div>
     </footer>
 
+    <script src="./static/js/particles.min.js"></script>
+    <script src="./static/js/app.js"></script>
+    <script src="./static/js/flickity.pkgd.min.js"></script>
+    <script>
+        window.onload = function () {
+            document.getElementById('navbox__burgercontainer').addEventListener('click', function () {
+            this.classList.toggle('open');
+            document.querySelector('.navbox__navbar').classList.toggle('open');
+            document.querySelector('.navbox').classList.toggle('open');
+            })
+        };
+    </script>
+    <script>
+        // script for close navbar on scroll
+        var didScroll = false;
+
+        function toggleNavbar() {
+            didScroll = true;
+        }
+
+        window.onscroll = toggleNavbar;
+
+        setInterval(function toggleNavigation() {
+            // opens navbar at top of the page
+            if(didScroll === true && window.pageYOffset <= 100) {
+                didScroll = false;
+                document.getElementById('navbox__burgercontainer').classList.add('open');
+                document.querySelector('.navbox__navbar').classList.remove('open');
+                document.querySelector('.navbox').classList.add('open');
+            }
+            // closes navbar on scrolling if not on top of page
+            else if(didScroll) {
+                didScroll = false;
+                document.getElementById('navbox__burgercontainer').classList.remove('open');
+                document.querySelector('.navbox__navbar').classList.add('open');
+                document.querySelector('.navbox').classList.remove('open');
+            }
+        }, 250);
+    </script>
+    <script>
+        // Script for onscroll in viewport Animations
+        var toolsIcons = document.querySelectorAll('.fadeInUp');
+        var contactSection = document.querySelector('.contact__content')
+
+        // checks if an element entered viewport
+        function isInViewport(element) {
+          let bounding = element.getBoundingClientRect();
+          return (
+            bounding.top >= 0 &&
+            bounding.left >= 0 &&
+            bounding.bottom <= (window.innerHeight * 1|| document.documentElement.clientHeight * 1) &&
+            bounding.right <= (window.innerWidth * 1|| document.documentElement.clientWidth * 1)
+          );
+        };
+
+        //triggers animation for elements that entered the viewport
+        setInterval(function triggerAnimation() {
+          for (let icon of toolsIcons) {
+            if (isInViewport(icon)) icon.classList.add('fadeInUpTriggered');
+          };
+          if (isInViewport(contactSection)) contactSection.classList.add('slideInTriggered');
+        }, 150);
+    </script>
 </body>
 </html>
